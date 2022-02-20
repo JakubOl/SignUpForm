@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="side-content">
+        <div class="side-content-header">
+          <img
+            class="odin-icon"
+            src="./imgfonts/odin-icon.png"
+            alt="Odin icon"
+          />
+          <h1>ODIN</h1>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="hero-header">
+          <div class="hero-text">
+            <div>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your depest dreams.
+              <br />
+              Sign up
+              <i>now</i> to get started.
+            </div>
+            <div>You know you want to.</div>
+          </div>
+        </div>
+        <form action="http://httpbin.org/post" class="form" id="form">
+          <p>Let's do this!</p>
+          <div class="userNames">
+            <label for="firstName"
+              ><fieldset>
+                <legend>FIRST NAME</legend>
+                <input
+                  type="text"
+                  class="firstName"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Thor"
+                  required
+                  
+                /></fieldset
+            ></label>
+            <label for="lastName"
+              ><fieldset>
+                <legend>LAST NAME</legend>
+                <input
+                  type="text"
+                  class="lastName focus"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Odinson"
+                  required
+                /></fieldset
+            ></label>
+          </div>
+          <div class="email-number">
+          <label for="email"
+              ><fieldset>
+                <legend>EMAIL</legend>
+                <input
+                  type="email"
+                  class="email"
+                  id="email"
+                  name="email"
+                  placeholder="thor@gmail.com" 
+                  autocomplete="off"
+                  required
+                /></fieldset
+            ></label>
+            <label for="phone-number"
+              ><fieldset>
+                <legend>PHONE NUMBER</legend>
+                <input
+                  type="number"
+                  class="phone-number"
+                  id="phone-number"
+                  name="phone-number"
+                  placeholder="+48 777 777 777"
+                  maxlength="15"
+                  required
+                /></fieldset
+            ></label>
+            </div>
+            <div class="passwors">
+          <label for="password"
+              ><fieldset>
+                <legend>PASSWORD</legend>
+                <input
+                  type="password"
+                  class="password error"
+                  id="password"
+                  name="password"
+                  placeholder="******" 
+                  required
+                /></fieldset
+            ></label>
+            <label for="password"
+              ><fieldset>
+                <legend>CONFIRM PASSWORD</legend>
+                <input
+                  type="password"
+                  class="password"
+                  id="password-conf"
+                  name="password-conf"
+                  placeholder="******" 
+                  required
+                /></fieldset
+            ></label>
+            </div>
+        </form>
+        <div class="sign-part">
+            <button type="submit" form="form">Create Account</button>
+            <div class="log-in-text">Already have and account? <a href="">Log in</a></div>
+        </div>    
+        <footer>
+          Copyright © 2022 JukiX
+          <a href="https://github.com/JukiX"
+            ><img src="./imgfonts/GitHub-Mark-32px.png" alt=""
+          /></a>
+        </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
